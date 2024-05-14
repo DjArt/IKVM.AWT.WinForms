@@ -1,0 +1,17 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+    <PropertyGroup>
+        <OutputType>library</OutputType>
+        <TargetFrameworks>net8.0-windows</TargetFrameworks>
+        <AssemblyTitle>IKVM.NET AWT Support</AssemblyTitle>
+        <Description>Winforms peers and 'native' code</Description>
+        <RootNamespace>IKVM.AWT.WinForms</RootNamespace>
+        <DefineConstants>$(DefineConstants);WHIDBEY</DefineConstants>
+        <UseWindowsForms>true</UseWindowsForms>
+    </PropertyGroup>
+    <ItemGroup>
+      <PackageReference Include="IKVM" Version="8.8.0" />
+      <PackageReference Include="Microsoft.Windows.CsWin32" Version="0.3.106">
+        <PrivateAssets>all</PrivateAssets>
+      </PackageReference>
+    </ItemGroup>
+</Project>
